@@ -1,28 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 .App {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;  
+  margin:0px;
+  padding:0px;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.Header{
+display: flex;
+height: 10vh;
+background-color: #519872;
+align-items: center;
+align-content: center;
+padding-left: 20vw;
+font-size: 40px;
+color:white;
+font-weight: bold;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.mainPage{
+  display: flex;
+  background-color: #afd4c0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center
 }
-
-.App-title {
-  font-size: 1.5em;
+.dashboard{
+  display: flex;
+  flex-direction: column;
+  width:60vw;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #e5f4ec
 }
-
-.App-intro {
-  font-size: large;
+.dashboardHeader{
+  display: flex;
+  height: 10vh;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
 }
+.dashboardCards{
+  display: flex;
+  flex-direction: column;
+  width:100vw;
+  align-items: center;
+  text-align: center;
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+}
+.houseCard{
+  display: flex;
+  margin:10px;
+  width:50vw;
+  height:25vh;
+  border:solid black 1px;
+  background-color:#dedede;
+  justify-content: center;
+  align-items:center;
+}
+.cardImage{
+  display: flex;
+  height:200px;
+  width: 400px;
+}
+.cardTextContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:200px;
+  width:20vw;
+}
+.cardText{
+  display: flex;
+}
+.wizardDashboard{
+  display: flex;
+  width:60vw;
+  height:90vh;
+  justify-content: center;
+  text-align: center;
+  align-items: top;
+  background-color: #e5f4ec
+}
+.wizardInputs{
+  display: flex;
+  flex-direction: column;
+  width:20vw;
+}
+.wizardbutton{
+display: flex;
+justify-content: space-between;
+margin:5px;
+}
+.cancel{
+  margin:5px;
+}
+h1{
+  font-size:50px;
+}
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 20px;
+}
+h4{
+  font-size: 15px;
+}
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:45px;
+  width:45px;
+  background-color:#fec2c2;
+  border-radius: 6%;
+  font-size: 20px;
+  color:black;
+  text-decoration: none;
+}
+.link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:45px;
+  width:100px;
+  background-color:#fec2c2;
+  border-radius: 6%;
+  font-size: 20px;
+  color:black;
+  text-decoration: none;
+}
+input{
+  margin:5px;
 }
